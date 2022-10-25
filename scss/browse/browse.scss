@@ -1,0 +1,95 @@
+.browse {
+    max-width: 1250px;
+    min-height: 600px;
+    padding-top: 100px;
+    // background-color: aqua;
+
+    .hero-image {
+        margin: 0 auto;
+        max-width: 1250px;
+        min-height: 400px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.40)) ,url(../images/music.jpg);   
+    }
+
+    .lessons {
+        margin: 0 auto;
+        max-width: 850px;
+        min-height: 400px;
+        // background-color:brown;
+        margin-top: 50px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+        justify-content: space-between;
+        h1 {
+            font-size: 40px;
+            font-family: PTSerif-BoldItalic;
+        }
+        
+        .lessons-container {
+            display: flex;
+            font-family: GillSans;
+            font-style: italic;
+            width: 400px;
+            min-height: 200px;
+            // background-color: cornflowerblue;
+            margin-bottom: 50px;
+            justify-content: space-between;
+            .left {
+                max-width: 200px;
+                min-height: 200px;
+                border-radius: 25px;
+                // background-color: antiquewhite;
+                // margin-right: 50px;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 25px;
+                }
+            }
+
+            .right {
+                max-width: 150px;
+                // min-height: 375px;
+                // background-color:aqua;
+
+                p {
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .browse {
+        .lessons {
+            // background-color: aqua;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .lessons-container {
+                .left {
+                    max-width: 375px;
+                    min-height: 375px;
+                    // background-color: cadetblue;
+                    img {
+                        width: 375px;
+                        height: 375px;
+                    }
+                }
+
+                .right {
+                    max-width: 375px;
+                    // height: 200px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,79 @@
+.art {
+    max-width: 1250px;
+    min-height: 600px;
+    padding-top: 100px;
+    // background-color: aqua;
+
+    .hero-image {
+        margin: 0 auto;
+        max-width: 1250px;
+        min-height: 400px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.40)) ,url(../images/1.jpg);   
+    }
+
+    .lessons {
+        margin: 0 auto;
+        max-width: 900px;
+        min-height: 400px;
+        // background-color:brown;
+        margin-top: 50px;
+        text-align: center;
+        h1 {
+            font-size: 40px;
+            font-family: PTSerif-BoldItalic;
+        }
+        
+        .lessons-container {
+            display: flex;
+            font-family: GillSans;
+            font-style: italic;
+            max-width: 900px;
+            min-height: 375px;
+            // background-color: cornflowerblue;
+            margin-bottom: 50px;
+            justify-content: space-between;
+            .left {
+                max-width: 375px;
+                min-height: 375px;
+                border-radius: 25px;
+                // background-color: antiquewhite;
+                // margin-right: 50px;
+
+                img {
+                    width: 375px;
+                    height: 375px;
+                    object-fit: cover;
+                    border-radius: 25px;
+                }
+            }
+
+            .right {
+                max-width: 475px;
+                // min-height: 375px;
+                // background-color:aqua;
+
+                p {
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 900px){
+//     // .art {
+//         .lessons {
+//             .lessons-container {
+//                 flex-direction: column;
+//                 align-items: center;
+
+//                 .right {
+//                     max-width: 375px;
+//                     margin-top: 30px;
+//                 }
+//             }
+//         }
+//     // }
+    
+// }

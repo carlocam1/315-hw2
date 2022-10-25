@@ -1,0 +1,16 @@
+@media only screen and (max-width: 900px){
+    // .art {
+        .lessons {
+            .lessons-container {
+                flex-direction: column;
+                align-items: center;
+
+                .right {
+                    max-width: 375px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    // }
+    
+}
